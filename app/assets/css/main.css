@@ -167,6 +167,27 @@ img {
     width: auto;
     justify-content: space-between;
     align-items: center;
-    position: relative; }
-    .header .header__bottom .social__item {
-      display: inline-block; }
+    position: relative;
+    margin-bottom: 52px; }
+  .header .social__wrap {
+    display: flex;
+    flex-wrap: nowrap; }
+  .header .social__titile {
+    float: left; }
+  .header .social__item {
+    display: inline-block;
+    width: 20px;
+    height: 20px; }
+  .header .arr_center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    margin: 0 auto;
+    top: 0;
+    transition: top all .5s linear;
+    -webkit-transition: top .5s linear; }
+    .header .arr_center:hover {
+      top: 10px;
+      position: absolute; }

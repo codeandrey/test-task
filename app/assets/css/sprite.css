@@ -1,0 +1,326 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 100em 242.3em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.combined-shape:before {
+      background-position: 0em 0em;
+      width: 11.6em;
+      height: 11.6em;
+  }
+
+
+
+
+  .icon.facebook-logo:before {
+      background-position: 0em -11.6em;
+      width: 1.1em;
+      height: 1.9em;
+  }
+
+
+
+
+  .icon.facebook-places-copy:before {
+      background-position: 0em -13.5em;
+      width: 0.9em;
+      height: 1.3em;
+  }
+
+
+
+
+  .icon.group-15:before {
+      background-position: 0em -14.8em;
+      width: 2.3em;
+      height: 7.1em;
+  }
+
+
+
+
+  .icon.group-15-copy:before {
+      background-position: 0em -21.9em;
+      width: 2.3em;
+      height: 7.1em;
+  }
+
+
+
+
+  .icon.group-15-copy-2:before {
+      background-position: 0em -29em;
+      width: 2.3em;
+      height: 7.1em;
+  }
+
+
+
+
+  .icon.group-15-copy-3:before {
+      background-position: 0em -36.1em;
+      width: 2.3em;
+      height: 7.1em;
+  }
+
+
+
+
+  .icon.group-16-copy-2:before {
+      background-position: 0em -43.2em;
+      width: 2.3em;
+      height: 6.2em;
+  }
+
+
+
+
+  .icon.group-16-copy-3:before {
+      background-position: 0em -49.4em;
+      width: 2.3em;
+      height: 6.2em;
+  }
+
+
+
+
+  .icon.group-16-copy-6:before {
+      background-position: 0em -55.6em;
+      width: 14.3em;
+      height: 2.3em;
+  }
+
+
+
+
+  .icon.group-16-copy-7:before {
+      background-position: 0em -57.9em;
+      width: 15.1em;
+      height: 2.3em;
+  }
+
+
+
+
+  .icon.group-17:before {
+      background-position: 0em -60.2em;
+      width: 3.8em;
+      height: 3.8em;
+  }
+
+
+
+
+  .icon.group-22:before {
+      background-position: 0em -64em;
+      width: 2.5em;
+      height: 3.6em;
+  }
+
+
+
+
+  .icon.group-6:before {
+      background-position: 0em -67.6em;
+      width: 2.1em;
+      height: 4.6em;
+  }
+
+
+
+
+  .icon.group-9:before {
+      background-position: 0em -72.2em;
+      width: 100em;
+      height: 44.375em;
+  }
+
+
+
+
+  .icon.group-9-copy:before {
+      background-position: 0em -116.6em;
+      width: 100em;
+      height: 44.375em;
+  }
+
+
+
+
+  .icon.group-9-copy-3:before {
+      background-position: 0em -161em;
+      width: 100em;
+      height: 44.77925718290119em;
+  }
+
+
+
+
+  .icon.linked-in:before {
+      background-position: 0em -205.8em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.linked-in_2:before {
+      background-position: 0em -207.6em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.linked-in_3:before {
+      background-position: 0em -209.4em;
+      width: 1.8em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.linkedin-logo:before {
+      background-position: 0em -211.2em;
+      width: 1.9em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.logo:before {
+      background-position: 0em -213em;
+      width: 20em;
+      height: 3.8em;
+  }
+
+
+
+
+  .icon.logo-nem:before {
+      background-position: 0em -216.8em;
+      width: 11.1em;
+      height: 3.4em;
+  }
+
+
+
+
+  .icon.logo-nem-copy:before {
+      background-position: 0em -220.2em;
+      width: 11.2em;
+      height: 3.4em;
+  }
+
+
+
+
+  .icon.logo-nem-copy-2:before {
+      background-position: 0em -223.6em;
+      width: 11.2em;
+      height: 3.4em;
+  }
+
+
+
+
+  .icon.oval-5-copy:before {
+      background-position: 0em -227em;
+      width: 1.7em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.oval-5-copy-3:before {
+      background-position: 0em -228.7em;
+      width: 1.7em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.oval-5-copy-4:before {
+      background-position: 0em -230.4em;
+      width: 1.7em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.people:before {
+      background-position: 0em -232.1em;
+      width: 2.4em;
+      height: 2.4em;
+  }
+
+
+
+
+  .icon.rectangle-6:before {
+      background-position: 0em -234.5em;
+      width: 4.7em;
+      height: 1em;
+  }
+
+
+
+
+  .icon.shape:before {
+      background-position: 0em -235.5em;
+      width: 2.3em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.shape_2:before {
+      background-position: 0em -237.3em;
+      width: 2.3em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.telegram:before {
+      background-position: 0em -239.1em;
+      width: 1.8em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.twitter-logo-silhouette:before {
+      background-position: 0em -240.7em;
+      width: 1.9em;
+      height: 1.6em;
+  }
+
+
+
+
+

@@ -60,7 +60,7 @@ img
 		height: 100%
 		position: absolute
 		background-color: rgba(50, 116, 255, 0.66)
-		
+
 	.logo 
 		max-width: 200px
 		display: block
@@ -193,6 +193,28 @@ img
 		justify-content: space-between
 		align-items: center
 		position: relative
+		margin-bottom: 52px
 
-		.social__item
-			display: inline-block
+	.social__wrap	
+		display: flex
+		flex-wrap: nowrap	
+	.social__titile
+		float: left
+
+	.social__item
+		display: inline-block
+		width: 20px
+		height: 20px
+	.arr_center
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+		width: 20px
+		margin: 0 auto
+		top: 0
+		transition: top all .5s linear
+		-webkit-transition: top .5s linear
+		&:hover 
+			top: 10px
+			position: absolute
