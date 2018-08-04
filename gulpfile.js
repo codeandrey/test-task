@@ -18,6 +18,7 @@ var gulp           = require('gulp'),
 		plumber = require('gulp-plumber'),
 		svgstore = require('gulp-svgstore'),
 		svgmin = require('gulp-svgmin'),
+		svgSprite = require("gulp-svg-sprites"),
 		inject = require('gulp-inject'),
 		path = require('path'),
 		gcmq = require('gulp-group-css-media-queries'),
@@ -115,6 +116,12 @@ gulp.task('sprite', function() {
           
     spriteData.img.pipe(gulp.dest(pathsrc+'/src/img/')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest(pathsrc+'/app/assets/css/')); // путь, куда сохраняем стили  
+});
+
+gulp.task('sprites-svg', function () {
+    return gulp.src(pathsrc+'/src/svg/*.svg')
+        .pipe(svgSprite())
+        .pipe(gulp.dest(pathsrc+'/app/assets'));
 });
 
 /*________      Minimized images            __________*/
