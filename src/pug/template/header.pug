@@ -1,0 +1,18 @@
+div.layer
+div.header__top
+	div.container-flex
+		div.header__logo
+			a(href="#").logo
+				img(src="./assets/img/logo@3x.png", alt="logo").logo__pic
+		div.header__nav
+			nav.menu
+				- var navs = ["ICO", "About", "Roadmap", "News", "Team","Contact"]
+				for item, i in navs 
+					li.menu-item
+						a(href="#") #{item}
+		div.header__authorization
+			div.authorization
+				div.avatar__wrap
+					img(src="./assets/img/user@3x.png", alt="user").avatar
+				div.user__title 
+					a(href="#").user__link Login
