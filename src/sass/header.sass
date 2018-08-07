@@ -4,7 +4,7 @@ body
 	font-size: 16px
 	min-width: 320px
 	max-width: 100%
-	max-width: 1440px
+	max-width: 100%
 	width: 100%
 	padding: 0
 	margin: auto
@@ -24,7 +24,6 @@ body
 	max-width: 1170px
 	position: relative
 	display: flex
-	flex: 1
 	flex-wrap: wrap
 	justify-content: space-between
 	align-items: center
@@ -38,8 +37,16 @@ ul
 img
 	max-width: 100%
 
-.header
-	width: 1440px
+object
+	display: none
+form 
+	width: 100%
+.link
+	color: #fff
+	text-decoration: none
+
+.main__bg
+	width: 100%
 	height: 100vh
 	background-color: rgba(50, 116, 255, 0.66)
 	background: url(/assets/img/header@3x.png)
@@ -49,14 +56,30 @@ img
 	display: flex
 	flex-direction: column
 
+.main__header.fixed
+	position: fixed
+	z-index: 100;
+
+.main__header
+	width: 100%
+	position: relative
+
 	.header__top
-		width: auto
+		width: 100%
+		max-width: 1170px
 		margin-top: 20px
 		position: relative
 		z-index: 1
+		display: flex
+		flex-wrap: wrap
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		text-align: center
+		margin: 20px auto 
 
-	.layer 
-		width: 1440px
+	.layer__mask
+		width: 100%
 		height: 100%
 		position: absolute
 		background-color: rgba(50, 116, 255, 0.66)
@@ -64,7 +87,7 @@ img
 	.logo 
 		max-width: 200px
 		display: block
-
+		margin: auto
 
 	.menu
 		display: flex
@@ -100,8 +123,10 @@ img
 			text-decoration: none
 			color: #ffffff
 
-	.title__wrap
+.main__content
+	margin: auto 0
 
+	.title__wrap
 		max-width: 650px
 		margin: auto
 		display: flex
@@ -121,100 +146,180 @@ img
 			line-height: 1.44
 			letter-spacing: 0.4px
 		 
-	.button
-		width: 200px
-		height: 43px
-		margin: 38px auto
-		border-radius: 100px
-		background-color: #f84f78
-		display: flex
-		align-items: center
-		justify-content: center
-		position: relative
-		overflow: hidden
-		transition: border-color ease .5s, color ease .5s
-		z-index: 1
+.button
+	width: 200px
+	height: 43px
+	margin: 38px auto
+	border-radius: 100px
+	background-color: #f84f78
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	overflow: hidden
+	transition: border-color ease .5s, color ease .5s
+	z-index: 1
+
+	&:after
+		content: ''
+		width: 0
+		height: 100%
+		position: absolute
+		bottom: 0
+		right: 0
+		background: #ffffff
+		z-index: -1
+		transition: width ease .3s
+
+
+	.button__title
+		font-family: $fr
+		font-size: 16px
+		text-align: center
+		text-transform: uppercase
+
+	.button__pic 
+		width: 33px
+		height: 33px
+		background-color: #ffffff
+		border-radius: 100%
+		right: 5px
+		position: absolute
 
 		&:after
 			content: ''
 			width: 0
-			height: 100%
+			height: 0
+			border-top: 6px solid transparent
+			border-left: 8px solid #f84f78
+			border-bottom: 6px solid transparent
 			position: absolute
 			bottom: 0
+			top: 0
+			margin: auto
+			left: 0
 			right: 0
-			background: #ffffff
-			z-index: -1
-			transition: width ease .3s
 
-
-		.button__title
-			font-family: $fr
-			font-size: 16px
-			text-align: center
-			text-transform: uppercase
+	&:hover
+		border-color: #ffffff
+		color: #4c7fdc
+		&:after
+	   		left: 0
+	   		width: 100%
 
 		.button__pic 
-			width: 33px
-			height: 33px
-			background-color: #ffffff
-			border-radius: 100%
-			right: 5px
-			position: absolute
-
+			background-color: #3072fd
 			&:after
-				content: ''
-				width: 0
-				height: 0
-				border-top: 6px solid transparent
-				border-left: 8px solid #f84f78
-				border-bottom: 6px solid transparent
-				position: absolute
-				bottom: 0
-				top: 0
-				margin: auto
-				left: 0
-				right: 0
+				border-left: 8px solid #ffffff
 
-		&:hover
-			border-color: #ffffff
-			color: #4c7fdc
-			&:after
-		   		left: 0
-		   		width: 100%
-			.button__pic 
-				background-color: #3072fd
-				&:after
-					border-left: 8px solid #ffffff
+.main__footer
+	display: flex
+	flex-direction: row
+	width: auto
+	justify-content: space-between
+	align-items: center
+	position: relative
+	margin-bottom: 52px
 
-	.header__bottom
-		display: flex
-		flex-direction: row
-		width: auto
-		justify-content: space-between
-		align-items: center
-		position: relative
-		margin-bottom: 52px
+.social__wrap	
+	display: flex
+	flex-wrap: nowrap	
 
-	.social__wrap	
-		display: flex
-		flex-wrap: nowrap	
-	.social__titile
-		float: left
+.social__titile
+	float: left
 
-	.social__item
-		display: inline-block
-		width: 20px
-		height: 20px
-	.arr_center
+.social__item
+	display: inline-block
+	width: 20px
+	height: 20px
+
+	.icon
+		max-width: 100%
+		max-height: 100%
+		color: #ffffff
+		margin: 0 5px
+
+	.social__link:hover .icon
+		color: #f84f78
+
+.arr_center
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	width: 20px
+	margin: 0 auto
+	top: 0
+	transition: top all .5s linear
+	-webkit-transition: top .5s linear
+	&:hover 
+		top: 10px
 		position: absolute
-		left: 0
-		right: 0
-		bottom: 0
-		width: 20px
-		margin: 0 auto
-		top: 0
-		transition: top all .5s linear
-		-webkit-transition: top .5s linear
-		&:hover 
-			top: 10px
-			position: absolute
+
+.swiper-slide 
+	display: flex
+
+.slider
+	height: 87px
+
+	.icon
+		height: 48px
+		margin: auto
+
+.section__calc
+	background-color: rgba(50, 116, 255, 0.66)
+	background: url(/assets/img/header@3x.png)
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+
+.calc
+	width: 100%
+	margin: 96px auto 50px
+.calc__title
+	font-family: Circe
+	font-size: 35px
+.calc__desc
+	font-family: Circe
+	font-size: 16px
+	line-height: 1.69
+.calc__row 
+	display: flex
+	width: 100%
+	justify-content: space-between
+	align-items: center
+.side__left
+	flex-basis: 20%
+.side__right 
+	width: 100%
+	display: flex
+.group__input
+	margin-right: 13px
+	max-width: 380px
+	margin-right: 13px
+	display: flex
+	flex-direction: column
+	width: 100%
+	&:last-child
+		margin-right: auto
+.input__form
+	max-width: 380px
+	width: 100%
+	height: 43px
+	margin-bottom: 13px
+	text-align: center
+	font-family: Circe
+	font-size: 16px
+	line-height: 1.69
+.token
+	max-width: 100%
+	flex-direction: row;
+	.button
+		margin: 0 0 0 36px
+	.input__form
+		max-width: 540px
+		text-align: left
+		padding-left: 26px
+.text__bottom
+	position: absolute
+	bottom: 0px

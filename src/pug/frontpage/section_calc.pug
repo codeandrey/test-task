@@ -1,30 +1,38 @@
-section(id="team")
-	div.wrapper
-		div.title__wrap
-			h2.title.title--wl MEET OUR TEAM
-		article.title__desc Nullam fermentum metus dolor, non suscipit neque ornare id. Curabitur fermentum ac lectus vitae ultrices. In faucibus nisl massa, et elementum orci placerat at. In iaculis faucibus felis pharetra lacinia. Nulla ultrices tincidunt eros at adipiscing. Aliquam porttitor volutpat dictum. Vestibulum vestibulum viverra placerat.
-		ul.team__list
-			li.team__item
-				div.team__wrap
-					div.team__img
-						img(src="/img/people-1.jpg").team__pic
-					div.team__name Carol Mills  
-						span.proff Designer
-			li.team__item
-				div.team__wrap
-					div.team__img
-						img(src="/img/people-2.jpg").team__pic
-					div.team__name Carol Mills  
-						span.proff Designer
-			li.team__item
-				div.team__wrap
-					div.team__img
-						img(src="/img/people-3.jpg").team__pic
-					div.team__name Carol Mills  
-						span.proff Designer
-			li.team__item
-				div.team__wrap
-					div.team__img
-						img(src="/img/people-4.jpg").team__pic
-					div.team__name Carol Mills  
-						span.proff Designer
+div.container-flex
+	div.calc
+		div.calc__title Cryptocurrency calculator
+		div.calc__desc Don’t miss your chance to buy LTY with 40% adiscount!
+	form
+		div.calc__form
+			div.calc__row
+				div.side__left
+					div.caption You invest:
+				div.side__right
+					div.group__input
+						div.group__input__title from
+						input(type="text" value="Ethereum (ETH)").input__form
+						input(type="text" value="1").input__form
+					div.group__input
+						div.group__input__title to
+						input(type="text" value="US Dollar (USD)").input__form
+						input(type="text" value="$ 892").input__form
+			div.calc__row
+				div.side__left
+					div.caption You get:
+				div.side__right
+					div.group__input.token
+						input(type="text" value="892 LTY tokens + 892 x 40% bonus = 1338 LTY").input__form
+						div.button 
+							span.button__title BUY
+							span.button__pic 
+			div.calc__row
+				div.side__left
+					div.caption Crowdsale address:
+				div.side__right
+					div.group__input.token
+						input(type="text" value="0x86Fa0497284E38197D364927eb3B78Cfdv0Ch927").input__form
+						div.button 
+							span.button__title COPY
+					span.text__bottom How to invest ?
+		
+	

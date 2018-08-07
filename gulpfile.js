@@ -119,10 +119,11 @@ gulp.task('sprite', function() {
 });
 
 gulp.task('sprites-svg', function () {
-    return gulp.src(pathsrc+'/src/svg/*.svg')
-        .pipe(svgSprite())
-        .pipe(gulp.dest(pathsrc+'/app/assets'));
+    return gulp.src(pathsrc+'/src/**/*.svg')
+        .pipe(svgSprite({mode: 'symbols'}))
+        .pipe(gulp.dest(pathsrc+'/app'));
 });
+
 
 /*________      Minimized images            __________*/
 
@@ -142,23 +143,6 @@ gulp.task('tinypng', function () {
 });
 /*_________     Build SVG Sprite File         _________*/
 
-gulp.task('svgstore', function () {
-      return gulp
-          .src(pathsrc+'/src/svg/*.svg')
-          .pipe(svgmin(function (file) {
-          		var prefix = path.basename(file.relative, path.extname(file.relative));
-	          return {
-	                plugins: [{
-	                    cleanupIDs: {
-	                        prefix: prefix + '-',
-	                        minify: true
-	                    }
-	                }]
-	          }
-        	}))
-        .pipe(svgstore())
-        .pipe(gulp.dest(pathsrc+'/app/assets/svg'));
-});
 
 /*________     Static Copy Files to app folders     ____________*/
 
@@ -276,3 +260,4 @@ gulp.task('clearcache', function () { return cache.clearAll(); });
 /*__________    Default Task Gulp     ___________*/
 
 gulp.task('default', [ 'smartgrid', 'pages', 'sass', 'scripts', 'imagemin', 'libs', 'picxel', 'css', 'fonts', 'watch', 'browser-sync']);
+

@@ -3,8 +3,19 @@ html(lang="ru")
 	head
 		include pug/template/head.pug
 	body
-		header.header
-			include pug/template/header.pug
-			include pug/frontpage/content__frontpage.pug
+		<object type="image/svg+xml" data="svg/symbols.svg" ></object>
+		div.main__bg
+			div.layer__mask
+			header.main__header
+				include pug/template/header.pug
+			section.main__content
+				include pug/frontpage/main__content.pug
+			div.main__footer
+				include pug/frontpage/main__footer.pug
+		div.slider
+			include pug/frontpage/slider.pug
+		div.section__calc
+			include pug/frontpage/section_calc.pug
+
 	include pug/template/footer.pug
 	include pug/template/footer_js.pug
