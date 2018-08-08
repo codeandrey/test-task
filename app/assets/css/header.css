@@ -11,21 +11,10 @@ body {
   overflow-x: hidden;
   list-style: none;
   font-size: 18px;
-  font-family: Circe;
+  font-family: Open Sans;
   color: ffffff;
   flex-direction: column;
   display: flex; }
-
-.container-flex {
-  margin: auto;
-  width: 100%;
-  max-width: 1170px;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center; }
 
 ul {
   margin: 0;
@@ -40,6 +29,23 @@ object {
 
 form {
   width: 100%; }
+
+svg {
+  fill: #fff; }
+
+.container-flex {
+  margin: auto;
+  width: 100%;
+  max-width: 1170px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+
+.row {
+  padding: 0 15px; }
 
 .link {
   color: #fff;
@@ -60,8 +66,17 @@ form {
   position: fixed;
   z-index: 100; }
 
+.mobile__menu {
+  display: none; }
+  @media (max-width: 767px) {
+    .mobile__menu {
+      display: block; } }
+  .mobile__menu svg.icon {
+    width: 20px;
+    height: 20px; }
+
 .main__header {
-  width: 100%;
+  width: auto;
   position: relative; }
   .main__header .header__top {
     width: 100%;
@@ -87,13 +102,23 @@ form {
     margin: auto; }
   .main__header .menu {
     display: flex; }
+    @media (max-width: 767px) {
+      .main__header .menu {
+        display: none;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.3);
+        left: 0;
+        top: 50px;
+        right: 0;
+        margin: 0 -15px;
+        text-align: left; } }
     .main__header .menu .menu-item {
       list-style: none; }
       .main__header .menu .menu-item a {
         margin: 5px 15px;
         color: #fff;
         font-size: 16px;
-        font-family: Circe;
+        font-family: Open Sans;
         text-decoration: none;
         text-transform: capitalize;
         letter-spacing: 0.3px;
@@ -123,12 +148,12 @@ form {
     justify-content: center; }
     .main__content .title__wrap .title {
       font-size: 45px;
-      font-family: Circe;
+      font-family: Open Sans;
       text-transform: uppercase;
       font-size: 45px;
       font-weight: bold; }
     .main__content .title__wrap .descr {
-      font-family: Circe;
+      font-family: Open Sans;
       font-size: 16px;
       line-height: 1.44;
       letter-spacing: 0.4px; }
@@ -157,7 +182,7 @@ form {
     z-index: -1;
     transition: width ease .3s; }
   .button .button__title {
-    font-family: Circe;
+    font-family: Open Sans;
     font-size: 16px;
     text-align: center;
     text-transform: uppercase; }
@@ -255,11 +280,11 @@ form {
   margin: 96px auto 50px; }
 
 .calc__title {
-  font-family: Circe;
+  font-family: Open Sans;
   font-size: 35px; }
 
 .calc__desc {
-  font-family: Circe;
+  font-family: Open Sans;
   font-size: 16px;
   line-height: 1.69; }
 
@@ -292,7 +317,7 @@ form {
   height: 43px;
   margin-bottom: 13px;
   text-align: center;
-  font-family: Circe;
+  font-family: Open Sans;
   font-size: 16px;
   line-height: 1.69; }
 

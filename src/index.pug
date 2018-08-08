@@ -6,15 +6,15 @@ html(lang="ru")
 		<object type="image/svg+xml" data="svg/symbols.svg" ></object>
 		div.main__bg
 			div.layer__mask
-			header.main__header
+			header.row.main__header
 				include pug/template/header.pug
-			section.main__content
+			section.row.main__content
 				include pug/frontpage/main__content.pug
-			div.main__footer
+			div.row.main__footer
 				include pug/frontpage/main__footer.pug
-		div.slider
+		div.row.slider
 			include pug/frontpage/slider.pug
-		div.section__calc
+		div.row.section__calc
 			include pug/frontpage/section_calc.pug
 
 	include pug/template/footer.pug

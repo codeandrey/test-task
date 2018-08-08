@@ -1,9 +1,12 @@
 div.header__top
+	div.mobile__menu
+		svg.icon
+			use(xlink:href="symbols.svg#bars")
 	div.header__logo
 		a(href="#").logo
 			img(src="./assets/img/logo@3x.png", alt="logo").logo__pic
 	div.header__nav
-		nav.menu
+		nav.menu#primary-menu
 			- var navs = ["ICO", "About", "Roadmap", "News", "Team","Contact"]
 			for item, i in navs 
 				li.menu-item
